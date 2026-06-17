@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seed Ghar - India's Trusted Seed Brand</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#1e6835',    // Deep green for buttons and footer
+                            light: '#4caf50',   // Lighter green
+                            bg: '#fcfaf4',      // Cream background
+                            orange: '#e86a33',  // Orange text
+                            yellow: '#f4c522'   // Yellow accents
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Quicksand', 'sans-serif'],
+                        display: ['Fredoka', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for elements that need specific tweaks */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .text-shadow-custom {
+            text-shadow: 2px 2px 0px rgba(255,255,255,0.8);
+        }
+        .curved-bottom {
+            border-bottom-left-radius: 50% 5%;
+            border-bottom-right-radius: 50% 5%;
+        }
+
+        /* --- Story Page Styles --- */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap');
+        
+        :root {
+          --color-text-primary: #111827;
+          --color-text-secondary: #4b5563;
+          --color-background-primary: #ffffff;
+          --color-background-secondary: #f3f4f6;
+          --color-border-tertiary: #e5e7eb;
+          --border-radius-md: 0.5rem;
+          --border-radius-lg: 1rem;
+        }
+
+        .story-page {
+          font-family: 'Inter', sans-serif;
+          color: var(--color-text-primary);
+          max-width: 680px;
+          margin: 0 auto;
+          padding: 0 1rem 3rem 1rem;
+        }
+
+        .story-hero {
+          background: #1a3a2a;
+          border-radius: var(--border-radius-lg);
+          padding: 3.5rem 2.5rem 3rem;
+          margin-bottom: 2rem;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .hero-dots {
+          position: absolute;
+          top: 0; left: 0; right: 0; bottom: 0;
+          background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
+          background-size: 28px 28px;
+        }
+
+        .hero-eyebrow {
+          font-size: 11px;
+          font-weight: 500;
+          letter-spacing: 0.2em;
+          text-transform: uppercase;
+          color: #7ec8a0;
+          margin-bottom: 1.25rem;
+          position: relative;
+        }
+
+        .hero-title {
+          font-family: 'Playfair Display', serif;
+          font-size: 44px;
+          font-weight: 700;
+          line-height: 1.12;
+          color: #f4f0e8;
+          margin-bottom: 1.25rem;
+          position: relative;
+        }
+
+        .hero-title em {
+          font-style: italic;
+          color: #7ec8a0;
+        }
+
+        .hero-sub {
+          font-size: 16px;
+          font-weight: 300;
+          color: rgba(244,240,232,0.7);
+          line-height: 1.7;
+          max-width: 480px;
+          position: relative;
+        }
+
+        .seed-strip {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 2rem;
+        }
+
+        .seed-card {
+          flex: 1;
+          background: var(--color-background-primary);
+          border: 0.5px solid var(--color-border-tertiary);
+          border-radius: var(--border-radius-lg);
+          padding: 1.25rem 1rem;
+          text-align: center;
+        }
+
+        .seed-icon {
+          font-size: 28px;
+          margin-bottom: 0.5rem;
+          display: block;
+        }
+
+        .seed-name {
+          font-family: 'Playfair Display', serif;
+          font-size: 14px;
+          font-weight: 700;
+          color: var(--color-text-primary);
+          margin-bottom: 6px;
+        }
+
+        .seed-tag {
+          font-size: 11px;
+          font-weight: 500;
+          color: #0f6e56;
+          background: #e1f5ee;
+          padding: 3px 8px;
+          border-radius: 20px;
+          display: inline-block;
+          margin-bottom: 8px;
+        }
+
+        .seed-nutrients {
+          font-size: 11px;
+          color: var(--color-text-secondary);
+          line-height: 1.5;
+        }
+
+        .story-block {
+          margin-bottom: 2rem;
+        }
+
+        .story-label {
+          font-size: 11px;
+          font-weight: 500;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          color: #0f6e56;
+          margin-bottom: 0.75rem;
+        }
+
+        .story-heading {
+          font-family: 'Playfair Display', serif;
+          font-size: 26px;
+          font-weight: 700;
+          color: var(--color-text-primary);
+          line-height: 1.25;
+          margin-bottom: 0.9rem;
+        }
+
+        .story-body {
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 1.8;
+          color: var(--color-text-secondary);
+        }
+
+        .story-body strong {
+          color: var(--color-text-primary);
+          font-weight: 500;
+        }
+
+        .pull-quote {
+          border-left: 3px solid #1a3a2a;
+          padding: 1rem 1.5rem;
+          margin: 1.5rem 0;
+          background: var(--color-background-secondary);
+          border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+        }
+
+        .pull-quote p {
+          font-family: 'Playfair Display', serif;
+          font-size: 19px;
+          font-style: italic;
+          color: var(--color-text-primary);
+          line-height: 1.5;
+        }
+
+        .stats-row {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 10px;
+          margin: 2rem 0;
+        }
+
+        .stat-box {
+          background: #1a3a2a;
+          border-radius: var(--border-radius-md);
+          padding: 1.25rem 1rem;
+          text-align: center;
+        }
+
+        .stat-num {
+          font-family: 'Playfair Display', serif;
+          font-size: 30px;
+          font-weight: 700;
+          color: #7ec8a0;
+          display: block;
+          margin-bottom: 4px;
+        }
+
+        .stat-label {
+          font-size: 12px;
+          color: rgba(244,240,232,0.65);
+          font-weight: 300;
+          line-height: 1.4;
+        }
+
+        .promise-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 10px;
+          margin: 1.5rem 0;
+        }
+
+        .promise-card {
+          border: 0.5px solid var(--color-border-tertiary);
+          border-radius: var(--border-radius-md);
+          padding: 1rem 1.1rem;
+        }
+
+        .promise-icon {
+          font-size: 20px;
+          margin-bottom: 6px;
+          display: block;
+        }
+
+        .promise-title {
+          font-size: 13px;
+          font-weight: 500;
+          color: var(--color-text-primary);
+          margin-bottom: 4px;
+        }
+
+        .promise-desc {
+          font-size: 12px;
+          color: var(--color-text-secondary);
+          line-height: 1.5;
+          font-weight: 300;
+        }
+
+        .cta-block {
+          background: #1a3a2a;
+          border-radius: var(--border-radius-lg);
+          padding: 2.5rem;
+          text-align: center;
+          margin-top: 2.5rem;
+        }
+
+        .cta-title {
+          font-family: 'Playfair Display', serif;
+          font-size: 26px;
+          font-weight: 700;
+          color: #f4f0e8;
+          margin-bottom: 0.75rem;
+          line-height: 1.3;
+        }
+
+        .cta-body {
+          font-size: 15px;
+          color: rgba(244,240,232,0.65);
+          font-weight: 300;
+          margin-bottom: 1.5rem;
+          line-height: 1.7;
+        }
+
+        .cta-btn {
+          display: inline-block;
+          background: #7ec8a0;
+          color: #1a3a2a;
+          font-size: 14px;
+          font-weight: 500;
+          padding: 12px 32px;
+          border-radius: 50px;
+          border: none;
+          cursor: pointer;
+          letter-spacing: 0.03em;
+        }
+
+        .divider {
+          height: 0.5px;
+          background: var(--color-border-tertiary);
+          margin: 2rem 0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          .story-hero { background: #0d2118; }
+          .stat-box { background: #0d2118; }
+          .cta-block { background: #0d2118; }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-[#fcfaf4]">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-[#1e6835] text-white text-[11px] md:text-xs py-2.5 px-4 w-full">
+        <div class="max-w-[1400px] mx-auto flex flex-wrap justify-center sm:justify-between items-center gap-2">
+            <div class="flex items-center gap-6 hidden md:flex font-medium">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-leaf text-green-300"></i> 100% Natural</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-ban text-green-300"></i> No Preservatives</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-seedling text-green-300"></i> Rich in Nutrition</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-hand-holding-heart text-green-300"></i> Power of Nature</span>
+            </div>
+            <div class="flex items-center gap-2 text-center w-full sm:w-auto justify-center font-bold tracking-wide">
+                <i class="fa-solid fa-truck-fast text-[#f4c522]"></i> 
+                <span>Free Shipping on Orders Above ₹499</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white sticky top-0 z-50 shadow-sm border-b border-gray-100">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer">
+                    <img src="logo.png" alt="Seed Ghar Logo" class="h-10 md:h-12 object-contain">
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex space-x-8 items-center font-bold text-gray-700 text-sm">
+                    <a href="#" onclick="showHome(event)" id="nav-home" class="text-[#1e6835] border-b-2 border-[#1e6835] pb-1 transition">Home</a>
+                    <a href="#" onclick="showAllProducts(event)" id="nav-products" class="hover:text-[#1e6835] pb-1 transition">All Products</a>
+                    <a href="#" onclick="showStory(event)" id="nav-story" class="hover:text-[#1e6835] pb-1 transition">Our Story</a>
+                    <a href="#" class="hover:text-[#1e6835] transition">Health Benefits</a>
+                    <a href="#" class="hover:text-[#1e6835] transition">Blog</a>
+                    <a href="#" class="hover:text-[#1e6835] transition">Contact Us</a>
+                </div>
+
+                <!-- Icons -->
+                <div class="flex items-center space-x-6 text-lg text-gray-800">
+                    <button class="hover:text-[#1e6835] transition"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="hover:text-[#1e6835] transition"><i class="fa-regular fa-user"></i></button>
+                    <!-- Mobile menu button -->
+                    <button class="lg:hidden text-2xl"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Wrappers for Single Page App functionality -->
+    <main id="main-content">
+        
+        <!-- Home View -->
+        <div id="home-view">
+
+    <!-- Hero Section -->
+    <header class="relative bg-gradient-to-br from-[#fffdf5] via-[#fef6e0] to-[#f8e6c0] pt-6 pb-28 md:pb-36 overflow-visible">
+        <!-- Background Decorative Elements -->
+        <div class="absolute top-10 left-10 text-green-500 text-3xl md:text-4xl opacity-40 rotate-[-30deg] pointer-events-none"><i class="fa-solid fa-leaf"></i></div>
+        <div class="absolute top-20 right-20 text-green-600 text-4xl md:text-5xl opacity-30 rotate-[15deg] pointer-events-none"><i class="fa-solid fa-leaf"></i></div>
+        <div class="absolute bottom-40 left-1/4 text-gray-800 text-xl md:text-2xl opacity-20 rotate-45 pointer-events-none"><i class="fa-solid fa-seedling"></i></div>
+        <div class="absolute top-1/3 right-1/4 text-[#e86a33] text-2xl md:text-3xl opacity-30 rotate-12 pointer-events-none"><i class="fa-solid fa-seedling"></i></div>
+
+        <!-- Top Logo for Hero -->
+        <div class="text-center w-full mb-8 relative z-20">
+            <img src="logo.png" alt="Seed Ghar" class="h-14 md:h-20 mx-auto object-contain drop-shadow-sm">
+        </div>
+
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-4">
+
+            <!-- Left: Jar & Heart Graphic -->
+            <div class="w-full lg:w-1/3 flex justify-center lg:justify-end relative order-2 lg:order-1 pr-0 lg:pr-12">
+                <div class="relative w-48 md:w-64 z-10 drop-shadow-2xl">
+                    <img src="pumpkin%20seed%2001.jpg" alt="Pumpkin Seeds Jar" class="w-full h-auto object-contain mix-blend-darken transform rotate-6 hover:scale-105 transition-transform duration-500">
+                </div>
+
+                <!-- Floating Heart Badge -->
+                <div class="absolute top-1/2 -translate-y-1/2 -right-6 md:-right-16 z-20 w-32 md:w-44 drop-shadow-xl transform -rotate-[10deg] hover:rotate-0 transition duration-300">
+                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full drop-shadow-md">
+                        <path fill="#e86a33" d="M100 185.5L85.5 172.3C34 125.6 0 94.8 0 56.5C0 24.6 24.6 0 56.5 0C74.6 0 91.9 8.5 100 22C108.1 8.5 125.4 0 143.5 0C175.4 0 200 24.6 200 56.5C200 94.8 166 125.6 114.5 172.4L100 185.5Z" />
+                        <path fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="5,5" d="M100 175.5L88.5 164.3C40 120.6 10 92.8 10 58.5C10 29.6 30.6 10 58.5 10C74.6 10 89.9 17.5 100 29C110.1 17.5 125.4 10 141.5 10C169.4 10 190 29.6 190 58.5C190 92.8 160 120.6 111.5 164.4L100 175.5Z" />
+                    </svg>
+                    <div class="absolute inset-0 flex items-center justify-center text-center p-4 mt-[-10px]">
+                        <p class="text-white text-[9px] md:text-[11px] font-bold leading-tight drop-shadow-md">Health ki<br>chhoti si shuruaat,<br>bade fayde ke<br>saath!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center: Main Typography -->
+            <div class="w-full lg:w-1/3 flex flex-col items-center text-center z-20 order-1 lg:order-2 mt-4 lg:mt-0">
+                <h2 class="font-display text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] mb-2 relative z-10 w-full whitespace-nowrap">
+                    <span class="text-[#ff5e00] block transform -rotate-3 hover:scale-105 transition-transform origin-center" style="paint-order: stroke fill; -webkit-text-stroke: 8px white; text-shadow: 0px 8px 15px rgba(0,0,0,0.15);">MAMI BHI KHUSH</span>
+                    <span class="text-[#15803d] block transform -rotate-2 hover:scale-105 transition-transform origin-center mt-2" style="paint-order: stroke fill; -webkit-text-stroke: 8px white; text-shadow: 0px 8px 15px rgba(0,0,0,0.15);">TAMI BHI KHUSH</span>
+                </h2>
+
+                <p class="text-lg md:text-2xl font-bold text-gray-900 mt-3 mb-2 z-10 tracking-wide">Healthy Seeds for a Happy Family!</p>
+
+                <!-- Green Smile -->
+                <div class="mt-2 w-28 md:w-36 h-10 relative mx-auto opacity-90">
+                    <svg viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 5 Q 50 35 90 5" stroke="#15803d" stroke-width="5" stroke-linecap="round"/>
+                        <path d="M5 2 L 15 10" stroke="#15803d" stroke-width="5" stroke-linecap="round"/>
+                        <path d="M95 2 L 85 10" stroke="#15803d" stroke-width="5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Right: Characters/People -->
+            <div class="w-full lg:w-1/3 flex justify-center lg:justify-start order-3 z-10 mt-8 lg:mt-0 pl-0 lg:pl-8">
+                <!-- Using a placeholder transparent image. Swap the src with your actual transparent illustration. -->
+                <img src="https://cdn3d.iconscout.com/3d/premium/thumb/grandmother-and-granddaughter-9008985-7352229.png" alt="Happy Family Illustration" class="w-64 md:w-80 lg:w-96 h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300">
+            </div>
+        </div>
+
+        <!-- Overlapping Feature Strip (5 Items) -->
+        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 z-30 w-[95%] lg:w-[98%] max-w-[1300px]">
+            <div class="bg-white rounded-full shadow-2xl border border-gray-100 py-3 md:py-4 px-2 md:px-6 flex justify-between items-center divide-x divide-gray-200 overflow-x-auto hide-scrollbar">
+                <!-- Item 1 -->
+                <div class="flex items-center justify-center gap-2 md:gap-3 px-2 md:px-4 min-w-[140px] flex-1">
+                    <div class="bg-[#1e6835] text-white rounded-full w-8 h-8 md:w-12 md:h-12 flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-leaf text-xs md:text-lg"></i>
+                    </div>
+                    <div class="text-left">
+                        <h3 class="font-bold text-gray-900 text-[10px] md:text-sm leading-tight">100% Natural</h3>
+                        <p class="text-[9px] md:text-xs text-gray-500 font-medium">No Preservatives</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="flex items-center justify-center gap-2 md:gap-3 px-2 md:px-4 min-w-[140px] flex-1">
+                    <div class="bg-[#1e6835] text-white rounded-full w-8 h-8 md:w-12 md:h-12 flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-seedling text-xs md:text-lg"></i>
+                    </div>
+                    <div class="text-left">
+                        <h3 class="font-bold text-gray-900 text-[10px] md:text-sm leading-tight">Rich in Nutrition</h3>
+                        <p class="text-[9px] md:text-xs text-gray-500 font-medium">Power of Nature</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="flex items-center justify-center gap-2 md:gap-3 px-2 md:px-4 min-w-[140px] flex-1">
+                    <div class="bg-[#1e6835] text-white rounded-full w-8 h-8 md:w-12 md:h-12 flex items-center justify-center flex-shrink-0">
+                        <i class="fa-regular fa-heart text-xs md:text-lg"></i>
+                    </div>
+                    <div class="text-left">
+                        <h3 class="font-bold text-gray-900 text-[10px] md:text-sm leading-tight">Healthy & Tasty</h3>
+                        <p class="text-[9px] md:text-xs text-gray-500 font-medium">For the Whole Family</p>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="flex items-center justify-center gap-2 md:gap-3 px-2 md:px-4 min-w-[140px] flex-1">
+                    <div class="bg-[#1e6835] text-white rounded-full w-8 h-8 md:w-12 md:h-12 flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-bolt text-xs md:text-lg"></i>
+                    </div>
+                    <div class="text-left">
+                        <h3 class="font-bold text-gray-900 text-[10px] md:text-sm leading-tight">Boosts Energy</h3>
+                        <p class="text-[9px] md:text-xs text-gray-500 font-medium">Keeps You Active</p>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="flex items-center justify-center gap-2 md:gap-3 px-2 md:px-4 min-w-[140px] flex-1">
+                    <div class="bg-[#1e6835] text-white rounded-full w-8 h-8 md:w-12 md:h-12 flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-shield-halved text-xs md:text-lg"></i>
+                    </div>
+                    <div class="text-left">
+                        <h3 class="font-bold text-gray-900 text-[10px] md:text-sm leading-tight">Strengthens</h3>
+                        <p class="text-[9px] md:text-xs text-gray-500 font-medium">Immunity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Our Premium Seeds Section -->
+    <section class="max-w-[1400px] mx-auto px-4 pt-24 pb-12 relative">
+        <div class="text-center mb-10 flex items-center justify-center gap-4">
+            <i class="fa-solid fa-leaf text-[#4caf50]"></i>
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-[#1e6835]">Our Premium Seeds</h2>
+            <i class="fa-solid fa-leaf text-[#4caf50] transform scale-x-[-1]"></i>
+        </div>
+
+        <!-- Products Carousel Wrapper -->
+        <div class="relative group/carousel">
+            
+            <!-- Left Arrow -->
+            <button class="hidden lg:flex absolute -left-6 top-1/2 -translate-y-1/2 bg-white rounded-full w-12 h-12 shadow-lg items-center justify-center text-gray-500 hover:text-[#1e6835] z-30 border border-gray-100 transition transform hover:scale-110" onclick="document.getElementById('seeds-carousel').scrollBy({left: -350, behavior: 'smooth'})">
+                <i class="fa-solid fa-chevron-left text-lg"></i>
+            </button>
+
+            <!-- Products Scroll Container -->
+            <div id="seeds-carousel" class="flex overflow-x-auto gap-6 pb-8 pt-4 hide-scrollbar snap-x px-2 md:px-6 scroll-smooth">
+
+                <!-- Product 1 -->
+                <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-shadow border border-gray-100 p-4 flex flex-col items-center group relative z-10 hover:z-20 min-w-[240px] md:min-w-[260px] flex-shrink-0 snap-center">
+                    <div class="w-full h-64 bg-white mb-4 relative flex items-center justify-center">
+                        <img src="chia_seed_01.png" alt="Chia Seeds" class="w-full h-full object-contain mix-blend-darken transition-transform duration-500 transform scale-[1.20] group-hover:scale-[1.30]">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1 relative z-10">Chia Seeds</h3>
+                    <p class="text-[11px] text-gray-500 mb-4 text-center h-8 font-medium relative z-10">Rich in Omega-3 & Fiber</p>
+                    <a href="#" class="bg-[#1e6835] hover:bg-green-800 text-white text-sm w-full text-center py-2.5 rounded-full font-bold transition mt-auto shadow-sm relative z-10">
+                        View on Flipkart
+                    </a>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-shadow border border-gray-100 p-4 flex flex-col items-center group relative z-10 hover:z-20 min-w-[240px] md:min-w-[260px] flex-shrink-0 snap-center">
+                    <div class="absolute -top-3 -right-3 bg-[#e86a33] text-white text-[10px] font-bold px-2 py-1 rounded-lg z-20 rotate-12 shadow-sm">Bestseller</div>
+                    <div class="w-full h-64 bg-white mb-4 relative flex items-center justify-center">
+                        <img src="pumpkin_seed_01.png" alt="Pumpkin Seeds" class="w-full h-full object-contain mix-blend-darken transition-transform duration-500 transform scale-[1.20] group-hover:scale-[1.30]">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1 relative z-10">Pumpkin Seeds</h3>
+                    <p class="text-[11px] text-gray-500 mb-4 text-center h-8 font-medium relative z-10">Immunity & Heart Health</p>
+                    <a href="#" class="bg-[#1e6835] hover:bg-green-800 text-white text-sm w-full text-center py-2.5 rounded-full font-bold transition mt-auto shadow-sm relative z-10">
+                        View on Flipkart
+                    </a>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-shadow border border-gray-100 p-4 flex flex-col items-center group relative z-10 hover:z-20 min-w-[240px] md:min-w-[260px] flex-shrink-0 snap-center">
+                    <div class="w-full h-64 bg-white mb-4 relative flex items-center justify-center">
+                        <img src="flax_seed_01.png" alt="Flax Seeds" class="w-full h-full object-contain mix-blend-darken transition-transform duration-500 transform scale-[1.20] group-hover:scale-[1.30]">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1 relative z-10">Flax Seeds</h3>
+                    <p class="text-[11px] text-gray-500 mb-4 text-center h-8 font-medium relative z-10">Goodness of Fiber</p>
+                    <a href="#" class="bg-[#1e6835] hover:bg-green-800 text-white text-sm w-full text-center py-2.5 rounded-full font-bold transition mt-auto shadow-sm relative z-10">
+                        View on Flipkart
+                    </a>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-shadow border border-gray-100 p-4 flex flex-col items-center group relative z-10 hover:z-20 min-w-[240px] md:min-w-[260px] flex-shrink-0 snap-center">
+                    <div class="w-full h-64 bg-white mb-4 relative flex items-center justify-center">
+                        <img src="fennel_seed_01.png" alt="Fennel Seeds" class="w-full h-full object-contain mix-blend-darken transition-transform duration-500 transform scale-[1.20] group-hover:scale-[1.30]">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1 relative z-10">Fennel Seeds</h3>
+                    <p class="text-[11px] text-gray-500 mb-4 text-center h-8 font-medium relative z-10">Digestive Health</p>
+                    <a href="#" class="bg-[#1e6835] hover:bg-green-800 text-white text-sm w-full text-center py-2.5 rounded-full font-bold transition mt-auto shadow-sm relative z-10">
+                        View on Flipkart
+                    </a>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-shadow border border-gray-100 p-4 flex flex-col items-center group relative z-10 hover:z-20 min-w-[240px] md:min-w-[260px] flex-shrink-0 snap-center">
+                    <div class="w-full h-64 bg-white mb-4 relative flex items-center justify-center">
+                        <img src="basil_seed_01.png" alt="Basil Seeds" class="w-full h-full object-contain mix-blend-darken transition-transform duration-500 transform scale-[1.20] group-hover:scale-[1.30]">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1 relative z-10">Basil Seeds</h3>
+                    <p class="text-[11px] text-gray-500 mb-4 text-center h-8 font-medium relative z-10">Cooling & Refreshing</p>
+                    <a href="#" class="bg-[#1e6835] hover:bg-green-800 text-white text-sm w-full text-center py-2.5 rounded-full font-bold transition mt-auto shadow-sm relative z-10">
+                        View on Flipkart
+                    </a>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-shadow border border-gray-100 p-4 flex flex-col items-center group relative z-10 hover:z-20 min-w-[240px] md:min-w-[260px] flex-shrink-0 snap-center">
+                    <div class="w-full h-64 bg-white mb-4 relative flex items-center justify-center">
+                        <img src="sunflower_seed_01.png" alt="Sunflower Seeds" class="w-full h-full object-contain mix-blend-darken transition-transform duration-500 transform scale-[1.20] group-hover:scale-[1.30] rounded-lg">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1 relative z-10">Sunflower Seeds</h3>
+                    <p class="text-[11px] text-gray-500 mb-4 text-center h-8 font-medium relative z-10">High in Vitamin E</p>
+                    <a href="#" class="bg-[#1e6835] hover:bg-green-800 text-white text-sm w-full text-center py-2.5 rounded-full font-bold transition mt-auto shadow-sm relative z-10">
+                        View on Flipkart
+                    </a>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-shadow border border-gray-100 p-4 flex flex-col items-center group relative z-10 hover:z-20 min-w-[240px] md:min-w-[260px] flex-shrink-0 snap-center">
+                    <div class="w-full h-64 bg-white mb-4 relative flex items-center justify-center">
+                        <img src="watrermelon_seed_01.png" alt="Watermelon Seeds" class="w-full h-full object-contain mix-blend-darken transition-transform duration-500 transform scale-[1.20] group-hover:scale-[1.30]">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1 relative z-10">Watermelon Seeds</h3>
+                    <p class="text-[11px] text-gray-500 mb-4 text-center h-8 font-medium relative z-10">Magnesium Rich</p>
+                    <a href="#" class="bg-[#1e6835] hover:bg-green-800 text-white text-sm w-full text-center py-2.5 rounded-full font-bold transition mt-auto shadow-sm relative z-10">
+                        View on Flipkart
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Right Arrow -->
+            <button class="hidden lg:flex absolute -right-6 top-1/2 -translate-y-1/2 bg-white rounded-full w-12 h-12 shadow-lg items-center justify-center text-gray-500 hover:text-[#1e6835] z-30 border border-gray-100 transition transform hover:scale-110" onclick="document.getElementById('seeds-carousel').scrollBy({left: 350, behavior: 'smooth'})">
+                <i class="fa-solid fa-chevron-right text-lg"></i>
+            </button>
+        </div>
+
+        <div class="text-center mt-6">
+            <button onclick="showAllProducts(event)" class="bg-[#1e6835] hover:bg-green-800 text-white font-bold py-3 px-10 rounded-full shadow-md transition">
+                View All Products
+            </button>
+        </div>
+    </section>
+
+    <!-- Benefits Banner -->
+    <section class="max-w-[1400px] mx-auto px-4 py-8">
+        <div class="bg-gradient-to-r from-[#698c25] to-[#1e6835] rounded-3xl p-8 md:p-12 text-white flex flex-col lg:flex-row items-center justify-between shadow-xl relative overflow-hidden">
+            
+            <!-- Title -->
+            <div class="mb-8 lg:mb-0 lg:w-1/4 relative z-10 text-center lg:text-left">
+                <h2 class="font-display text-4xl md:text-5xl font-bold leading-tight drop-shadow-md">Small Seeds<br>Big Benefits</h2>
+            </div>
+            
+            <!-- Features list -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 flex-1 w-full relative z-10 lg:pr-32">
+                <div class="flex flex-col items-center text-center">
+                    <i class="fa-solid fa-bolt text-3xl mb-3 text-yellow-300"></i>
+                    <p class="font-bold text-sm">Boosts Energy</p>
+                </div>
+                <div class="flex flex-col items-center text-center md:border-l border-white/20">
+                    <i class="fa-solid fa-heart-pulse text-3xl mb-3 text-red-200"></i>
+                    <p class="font-bold text-sm">Supports Heart<br>Health</p>
+                </div>
+                <div class="flex flex-col items-center text-center border-white/20 md:border-l">
+                    <i class="fa-solid fa-weight-scale text-3xl mb-3 text-blue-200"></i>
+                    <p class="font-bold text-sm">Helps Weight<br>Management</p>
+                </div>
+                <div class="flex flex-col items-center text-center border-l border-white/20">
+                    <i class="fa-solid fa-shield-halved text-3xl mb-3 text-gray-100"></i>
+                    <p class="font-bold text-sm">Strengthens<br>Immunity</p>
+                </div>
+            </div>
+
+            <!-- Absolute Image -->
+            <div class="hidden lg:block absolute right-[-20px] bottom-[-20px] z-0 opacity-90">
+                <img src="https://images.unsplash.com/photo-1599576856515-992a7e4bce71?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Bowl of seeds" class="w-64 h-64 rounded-full border-8 border-[#1e6835]/30 object-cover mix-blend-luminosity">
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Section: Newsletter & Platforms -->
+    <section class="max-w-[1400px] mx-auto px-4 py-12 relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <!-- Newsletter Card -->
+            <div class="bg-[#fffdf0] rounded-3xl p-8 lg:p-10 shadow-sm border border-yellow-100 col-span-1 lg:col-span-5">
+                <h3 class="font-display text-2xl font-bold text-gray-900 mb-2">Stay Healthy, Stay Updated!</h3>
+                <p class="text-gray-500 text-sm mb-6 font-medium">Subscribe to our newsletter and get tips, offers & updates.</p>
+                <form class="flex w-full relative bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm">
+                    <input type="email" placeholder="Enter your email" class="w-full py-3.5 pl-4 pr-32 focus:outline-none text-sm text-gray-700">
+                    <button type="submit" class="absolute right-1 top-1 bottom-1 bg-[#1e6835] hover:bg-green-800 text-white font-bold px-6 rounded-md transition text-sm">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+
+            <!-- Available Platforms Card -->
+            <div class="bg-white rounded-3xl p-8 lg:p-10 shadow-sm border border-gray-100 col-span-1 lg:col-span-4 flex flex-col justify-center">
+                <h3 class="font-display text-xl font-bold text-[#e86a33] mb-2">Available On</h3>
+                <p class="text-gray-500 text-sm mb-6 font-medium">Shop our products on your<br>favorite platforms</p>
+                <div class="flex items-center gap-6">
+                    <span class="text-2xl font-black tracking-tighter">amazon</span>
+                    <span class="text-xl font-bold text-blue-600 italic">Flipkart <i class="fa-solid fa-basket-shopping text-yellow-500 text-sm"></i></span>
+                </div>
+            </div>
+
+            <!-- Floating Image Deco -->
+            <div class="hidden lg:block col-span-3 relative h-full min-h-[200px]">
+                 <img src="https://images.unsplash.com/photo-1599576856515-992a7e4bce71?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Floating seeds" class="absolute right-0 top-1/2 -translate-y-1/2 w-[150%] max-w-none object-cover mix-blend-multiply opacity-80" style="clip-path: ellipse(50% 40% at 50% 50%);">
+            </div>
+
+        </div>
+    </section>
+
+    </div> <!-- End Home View -->
+
+    <!-- All Products View (Hidden by default) -->
+    <div id="products-view" class="hidden min-h-screen bg-[#fcfaf4] pb-20">
+        <section class="max-w-[1400px] mx-auto px-4 pt-12 pb-12">
+            <div class="text-center mb-10 flex items-center justify-center gap-4">
+                <i class="fa-solid fa-leaf text-[#4caf50]"></i>
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-[#1e6835]">All Products</h2>
+                <i class="fa-solid fa-leaf text-[#4caf50] transform scale-x-[-1]"></i>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-shadow border border-gray-100 p-4 flex flex-col items-center group relative z-10 hover:z-20">
+                    <div class="w-full h-64 bg-white mb-4 relative flex items-center justify-center">
+                        <img src="chia_seed_01.png" alt="Chia Seeds" class="w-full h-full object-contain mix-blend-darken transition-transform duration-500 transform scale-[1.20] group-hover:scale-[1.30]">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1 relative z-10">Chia Seeds</h3>
+                    <p class="text-[11px] text-gray-500 mb-4 text-center h-8 font-medium relative z-10">Rich in Omega-3 & Fiber</p>
+                    <a href="#" class="bg-[#1e6835] hover:bg-green-800 text-white text-sm w-full text-center py-2.5 rounded-full font-bold transition mt-auto shadow-sm relative z-10">
+                        View on Flipkart
+                    </a>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-shadow border border-gray-100 p-4 flex flex-col items-center group relative z-10 hover:z-20">
+                    <div class="absolute -top-3 -right-3 bg-[#e86a33] text-white text-[10px] font-bold px-2 py-1 rounded-lg z-20 rotate-12 shadow-sm">Bestseller</div>
+                    <div class="w-full h-64 bg-white mb-4 relative flex items-center justify-center">
+                        <img src="pumpkin_seed_01.png" alt="Pumpkin Seeds" class="w-full h-full object-contain mix-blend-darken transition-transform duration-500 transform scale-[1.20] group-hover:scale-[1.30]">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1 relative z-10">Pumpkin Seeds</h3>
+                    <p class="text-[11px] text-gray-500 mb-4 text-center h-8 font-medium relative z-10">Immunity & Heart Health</p>
+                    <a href="#" class="bg-[#1e6835] hover:bg-green-800 text-white text-sm w-full text-center py-2.5 rounded-full font-bold transition mt-auto shadow-sm relative z-10">
+                        View on Flipkart
+                    </a>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-shadow border border-gray-100 p-4 flex flex-col items-center group relative z-10 hover:z-20">
+                    <div class="w-full h-64 bg-white mb-4 relative flex items-center justify-center">
+                        <img src="flax_seed_01.png" alt="Flax Seeds" class="w-full h-full object-contain mix-blend-darken transition-transform duration-500 transform scale-[1.20] group-hover:scale-[1.30]">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1 relative z-10">Flax Seeds</h3>
+                    <p class="text-[11px] text-gray-500 mb-4 text-center h-8 font-medium relative z-10">Goodness of Fiber</p>
+                    <a href="#" class="bg-[#1e6835] hover:bg-green-800 text-white text-sm w-full text-center py-2.5 rounded-full font-bold transition mt-auto shadow-sm relative z-10">
+                        View on Flipkart
+                    </a>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-shadow border border-gray-100 p-4 flex flex-col items-center group relative z-10 hover:z-20">
+                    <div class="w-full h-64 bg-white mb-4 relative flex items-center justify-center">
+                        <img src="fennel_seed_01.png" alt="Fennel Seeds" class="w-full h-full object-contain mix-blend-darken transition-transform duration-500 transform scale-[1.20] group-hover:scale-[1.30]">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1 relative z-10">Fennel Seeds</h3>
+                    <p class="text-[11px] text-gray-500 mb-4 text-center h-8 font-medium relative z-10">Digestive Health</p>
+                    <a href="#" class="bg-[#1e6835] hover:bg-green-800 text-white text-sm w-full text-center py-2.5 rounded-full font-bold transition mt-auto shadow-sm relative z-10">
+                        View on Flipkart
+                    </a>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-shadow border border-gray-100 p-4 flex flex-col items-center group relative z-10 hover:z-20">
+                    <div class="w-full h-64 bg-white mb-4 relative flex items-center justify-center">
+                        <img src="basil_seed_01.png" alt="Basil Seeds" class="w-full h-full object-contain mix-blend-darken transition-transform duration-500 transform scale-[1.20] group-hover:scale-[1.30]">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1 relative z-10">Basil Seeds</h3>
+                    <p class="text-[11px] text-gray-500 mb-4 text-center h-8 font-medium relative z-10">Cooling & Refreshing</p>
+                    <a href="#" class="bg-[#1e6835] hover:bg-green-800 text-white text-sm w-full text-center py-2.5 rounded-full font-bold transition mt-auto shadow-sm relative z-10">
+                        View on Flipkart
+                    </a>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-shadow border border-gray-100 p-4 flex flex-col items-center group relative z-10 hover:z-20">
+                    <div class="w-full h-64 bg-white mb-4 relative flex items-center justify-center">
+                        <img src="sunflower_seed_01.png" alt="Sunflower Seeds" class="w-full h-full object-contain mix-blend-darken transition-transform duration-500 transform scale-[1.20] group-hover:scale-[1.30] rounded-lg">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1 relative z-10">Sunflower Seeds</h3>
+                    <p class="text-[11px] text-gray-500 mb-4 text-center h-8 font-medium relative z-10">High in Vitamin E</p>
+                    <a href="#" class="bg-[#1e6835] hover:bg-green-800 text-white text-sm w-full text-center py-2.5 rounded-full font-bold transition mt-auto shadow-sm relative z-10">
+                        View on Flipkart
+                    </a>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="bg-white rounded-2xl shadow-md hover:shadow-2xl transition-shadow border border-gray-100 p-4 flex flex-col items-center group relative z-10 hover:z-20">
+                    <div class="w-full h-64 bg-white mb-4 relative flex items-center justify-center">
+                        <img src="watrermelon_seed_01.png" alt="Watermelon Seeds" class="w-full h-full object-contain mix-blend-darken transition-transform duration-500 transform scale-[1.20] group-hover:scale-[1.30]">
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-1 relative z-10">Watermelon Seeds</h3>
+                    <p class="text-[11px] text-gray-500 mb-4 text-center h-8 font-medium relative z-10">Magnesium Rich</p>
+                    <a href="#" class="bg-[#1e6835] hover:bg-green-800 text-white text-sm w-full text-center py-2.5 rounded-full font-bold transition mt-auto shadow-sm relative z-10">
+                        View on Flipkart
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div> <!-- End All Products View -->
+
+    <!-- Our Story View (Hidden by default) -->
+    <div id="story-view" class="hidden min-h-screen bg-[#fcfaf4] pb-20 pt-12">
+        <div class="story-page">
+
+          <div class="story-hero">
+            <div class="hero-dots"></div>
+            <div class="hero-eyebrow">Our Story · Sown with Purpose</div>
+            <h1 class="hero-title">From a <em>Tiny Seed</em>,<br>a Nation Nourished</h1>
+            <p class="hero-sub">We started with a question: why do the most nutritious foods on earth sit unnoticed in Indian kitchens? That question became our mission.</p>
+          </div>
+
+          <div class="seed-strip">
+            <div class="seed-card">
+              <span class="seed-icon">🌿</span>
+              <div class="seed-name">Chia Seeds</div>
+              <div class="seed-tag">Omega-3 Rich</div>
+              <div class="seed-nutrients">Calcium · Fibre · Antioxidants · Plant Protein</div>
+            </div>
+            <div class="seed-card">
+              <span class="seed-icon">🍉</span>
+              <div class="seed-name">Watermelon Seeds</div>
+              <div class="seed-tag">Zinc & Magnesium</div>
+              <div class="seed-nutrients">Iron · B-Vitamins · Healthy Fats · Protein</div>
+            </div>
+            <div class="seed-card">
+              <span class="seed-icon">🎃</span>
+              <div class="seed-name">Pumpkin Seeds</div>
+              <div class="seed-tag">Immunity Booster</div>
+              <div class="seed-nutrients">Omega-6 · Tryptophan · Phosphorus · Zinc</div>
+            </div>
+          </div>
+
+          <div class="story-block">
+            <div class="story-label">How it began</div>
+            <h2 class="story-heading">We Saw What Others Overlooked</h2>
+            <div class="story-body">
+              <p>It began in an ordinary kitchen in India — not with a recipe, but with a realisation. A small bowl of seeds sat quietly on a shelf, the same seeds that ancient civilisations built their strength upon. <strong>Chia. Watermelon. Pumpkin.</strong> Packed with Omega-3 fatty acids, zinc, magnesium, and vitamins that most Indians never get enough of — and yet, barely anyone was eating them.</p>
+            </div>
+
+            <div class="pull-quote">
+              <p>"If a single tablespoon of chia holds more Omega-3 than a glass of milk holds calcium — why isn't every Indian home eating it?"</p>
+            </div>
+
+            <div class="story-body">
+              <p>We couldn't let that question go. So we didn't. We founded our brand not to sell seeds, but <strong>to change the way India eats</strong>. To make superfoods feel like everyday food. To bring premium quality nutrition to every household — whether in Mumbai, Mysuru, or a small town in Madhya Pradesh.</p>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="stats-row">
+            <div class="stat-box">
+              <span class="stat-num">3×</span>
+              <div class="stat-label">more iron than spinach in pumpkin seeds</div>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num">11g</span>
+              <div class="stat-label">protein per 28g of chia seeds</div>
+            </div>
+            <div class="stat-box">
+              <span class="stat-num">100%</span>
+              <div class="stat-label">natural, unprocessed, premium quality</div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="story-block">
+            <div class="story-label">The mission</div>
+            <h2 class="story-heading">A Nutrition Revolution, One Home at a Time</h2>
+            <div class="story-body">
+              <p>India has one of the highest rates of nutritional deficiency in the world. Not because of poverty alone — but because <strong>the right foods never reached the right homes</strong>. We set out to change that.</p>
+              <br>
+              <p>We sourced only the finest seeds. We said no to fillers, no to artificial processing, no to compromise. Every pack that leaves our hands carries a promise: <strong>what goes into your family's body is the very best nature has to offer.</strong></p>
+              <br>
+              <p>Mothers adding chia to their children's morning smoothies. Fathers sprinkling watermelon seeds over their evening salads. Young professionals discovering that the tiny pumpkin seed holds the key to better sleep, stronger immunity, and a calmer mind. This is the India we are building — one seed at a time.</p>
+            </div>
+          </div>
+
+          <div class="promise-grid">
+            <div class="promise-card">
+              <span class="promise-icon">✦</span>
+              <div class="promise-title">Premium, Clean Sourcing</div>
+              <div class="promise-desc">Handpicked from trusted farms. No pesticides, no shortcuts. Pure as nature intended.</div>
+            </div>
+            <div class="promise-card">
+              <span class="promise-icon">🧪</span>
+              <div class="promise-title">Lab-Tested Quality</div>
+              <div class="promise-desc">Every batch is tested for purity, nutrient density, and freshness before it reaches you.</div>
+            </div>
+            <div class="promise-card">
+              <span class="promise-icon">🏠</span>
+              <div class="promise-title">Delivered Across India</div>
+              <div class="promise-desc">From metros to small towns, premium nutrition is no longer a privilege. It belongs to everyone.</div>
+            </div>
+            <div class="promise-card">
+              <span class="promise-icon">🌱</span>
+              <div class="promise-title">Sustainably Grown</div>
+              <div class="promise-desc">We work with farmers who care for the earth as much as we care for your health.</div>
+            </div>
+          </div>
+
+          <div class="cta-block">
+            <div class="cta-title">The Seed of Change<br>Starts With You</div>
+            <div class="cta-body">Every great harvest begins with one decision. Join thousands of Indian families already nourishing themselves better, naturally, every single day.</div>
+            <button class="cta-btn" onclick="showAllProducts(event)">Shop Our Products ↗</button>
+          </div>
+
+        </div>
+    </div> <!-- End Our Story View -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 pt-16 pb-8 border-t border-gray-200 mt-4 relative">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                
+                <!-- Brand Col -->
+                <div class="lg:col-span-2">
+                    <div class="mb-4">
+                        <img src="logo.png" alt="Seed Ghar Logo" class="h-10 md:h-12 object-contain">
+                    </div>
+                    <p class="text-gray-600 text-xs leading-relaxed max-w-xs mb-6 font-medium">
+                        We bring you the finest quality seeds, packed with nutrition and goodness.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-blue-600 text-white w-7 h-7 rounded-full flex items-center justify-center text-xs hover:bg-blue-700"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="bg-pink-600 text-white w-7 h-7 rounded-full flex items-center justify-center text-xs hover:bg-pink-700"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="bg-red-600 text-white w-7 h-7 rounded-full flex items-center justify-center text-xs hover:bg-red-700"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-4 text-sm">Quick Links</h4>
+                    <ul class="space-y-2.5 text-[13px] text-gray-600 font-medium">
+                        <li><a href="#" onclick="showHome(event)" class="hover:text-[#1e6835] transition">Home</a></li>
+                        <li><a href="#" onclick="showAllProducts(event)" class="hover:text-[#1e6835] transition">All Products</a></li>
+                        <li><a href="#" onclick="showStory(event)" class="hover:text-[#1e6835] transition">Our Story</a></li>
+                        <li><a href="#" class="hover:text-[#1e6835] transition">Health Benefits</a></li>
+                        <li><a href="#" class="hover:text-[#1e6835] transition">Blog</a></li>
+                        <li><a href="#" class="hover:text-[#1e6835] transition">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-4 text-sm">Contact Us</h4>
+                    <ul class="space-y-3 text-[13px] text-gray-600 font-medium mb-8">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-phone mt-0.5 text-gray-400"></i>
+                            <span>+91 9123456789</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-envelope mt-0.5 text-gray-400"></i>
+                            <span>hello@seedghar.com</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-0.5 text-gray-400"></i>
+                            <span>123, Healthy Street,<br>Nature City, India - 110001</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Footer bar -->
+            <div class="pt-6 border-t border-gray-200">
+                <p class="text-xs text-gray-500 font-medium">
+                    &copy; 2024 Seed Ghar. All Rights Reserved.
+                </p>
+            </div>
+            
+            <div class="absolute bottom-4 right-4 text-green-500 text-3xl opacity-80"><i class="fa-solid fa-leaf"></i></div>
+        </div>
+    </footer>
+
+    <!-- App Logic -->
+    <script>
+        function hideAllViews() {
+            document.getElementById('home-view').style.display = 'none';
+            document.getElementById('products-view').style.display = 'none';
+            document.getElementById('story-view').style.display = 'none';
+            
+            // Reset active state in nav
+            const navLinks = ['nav-home', 'nav-products', 'nav-story'];
+            navLinks.forEach(id => {
+                const el = document.getElementById(id);
+                if(el) {
+                    el.classList.remove('text-[#1e6835]', 'border-b-2', 'border-[#1e6835]');
+                }
+            });
+        }
+
+        function showHome(e) {
+            if(e) e.preventDefault();
+            hideAllViews();
+            document.getElementById('home-view').style.display = 'block';
+            document.getElementById('nav-home').classList.add('text-[#1e6835]', 'border-b-2', 'border-[#1e6835]');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function showAllProducts(e) {
+            if(e) e.preventDefault();
+            hideAllViews();
+            document.getElementById('products-view').style.display = 'block';
+            document.getElementById('nav-products').classList.add('text-[#1e6835]', 'border-b-2', 'border-[#1e6835]');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function showStory(e) {
+            if(e) e.preventDefault();
+            hideAllViews();
+            document.getElementById('story-view').style.display = 'block';
+            document.getElementById('nav-story').classList.add('text-[#1e6835]', 'border-b-2', 'border-[#1e6835]');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
